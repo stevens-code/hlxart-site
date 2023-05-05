@@ -1,11 +1,25 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url(oxygen/Oxygen-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url(oxygen/Oxygen-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url(oxygen/Oxygen-Light.ttf);
+  font-weight: lighter;
+}
+
 html {
-  font-size: 14px;
+  font: 16px "Oxygen", sans-serif;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
 }
 
 html {
