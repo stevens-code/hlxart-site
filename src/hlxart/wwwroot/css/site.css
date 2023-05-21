@@ -1,32 +1,58 @@
-@font-face {
-  font-family: "Oxygen";
-  src: url(oxygen/Oxygen-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Oxygen";
-  src: url(oxygen/Oxygen-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Oxygen";
-  src: url(oxygen/Oxygen-Light.ttf);
-  font-weight: lighter;
-}
-
-html {
-  font: 16px "Oxygen", sans-serif;
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
 }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.navbar {
+  border-bottom: 1px solid var(--navbar-border);
+  background: var(--navbar-bg);
+  box-shadow: 0 0.25rem 0.75rem var(--navbar-shadow);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem;
+  color: var(--navbar-text);
+  margin-bottom: 1rem;
 }
 
-body {
-  margin-bottom: 60px;
+.navbar-nav {
+  flex-direction: row;
 }
+
+.nav-item {
+  margin: 0 0.25rem;
+}
+
+.nav-link {
+  color: var(--navbar-text);
+  padding: 0.25rem !important;
+  line-height: 1rem;
+}
+
+.nav-item ion-icon {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0;
+  background: linear-gradient(-50deg, var(--brand-color-1), var(--brand-color-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-decoration: none !important;
+}
+
+  .navbar-brand:hover, .navbar-brand:focus {
+    color: var(--brand-color);
+    opacity: 0.9;
+  }
