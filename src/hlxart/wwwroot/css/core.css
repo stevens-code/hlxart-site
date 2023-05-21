@@ -22,12 +22,12 @@ html {
   --app-text: #fafafa;
   --element-shadow: 0px 0px 5px 1px rgb(0 0 0 / 0.9);
   /* Selection */
-  --selection-text: #e6f1f5;
-  --selection-bg: rgba(0, 138, 199, 0.75);
-  --selection-editor-bg: rgba(0, 138, 199, 0.25);
+  --selection-text: #f0fffe;
+  --selection-bg: hsl(185 85% 46% / 0.5);
+  --selection-editor-bg: hsl(185 85% 46% / 0.5);
   /* Brand */
-  --brand-color-1: hsl(118deg 76% 47%);
-  --brand-color-2: hsl(169deg 49% 64%);
+  --brand-color-1: hsl(151 85% 44%);
+  --brand-color-2: hsl(183 59% 57%);
   /* Navbar */
   --navbar-border: hsl(0 0% 25% / 0.90);
   --navbar-bg: linear-gradient(180deg, hsl(0 0% 20% / 0.9), hsl(0 0% 15% / 1.0));
@@ -37,8 +37,8 @@ html {
   --button-padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   --button-hover-shadow: 0px 0px 5px rgba(255, 255, 255, 0.15);
   /* Links */
-  --link: hsl(200 83% 56%);
-  --link-hover: hsl(200 100% 74%);
+  --link: hsl(185 85% 46%);
+  --link-hover: hsl(185 83% 63%);
   /* Posts */
   --post-border: hsl(0 0% 26%);
   --post-bg: hsl(0 0% 8%);
@@ -73,8 +73,8 @@ html {
   --post-purple: #9a2ac0;
   --post-pink: #e06f8b;
   /* Primary Colors */
-  --primary-border-color: #0092b7;
-  --primary-background: linear-gradient(180deg, #357cc9, #00859f);
+  --primary-border-color: #00abd7;
+  --primary-background: linear-gradient(180deg, #4d9ef7, #00859f);
   --primary-text: #fff;
   --primary-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   --primary-border-color-hover: #25bae0;
@@ -118,8 +118,8 @@ html {
   --success-text-disabled: #f2f6ea;
   --success-focus-ring: 0 0 0.3rem 0.1rem rgba(113, 182, 18, 0.50);
   /* Danger Colors */
-  --danger-border-color: #f5550b;
-  --danger-background: linear-gradient(180deg, #df5700, #d10000);
+  --danger-border-color: #ff7231;
+  --danger-background: linear-gradient(180deg, #df5700, #e10000);
   --danger-text: #ffffff;
   --danger-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   --danger-border-color-hover: #ea3f00;
@@ -134,14 +134,14 @@ html {
   --danger-focus-ring: 0 0 0.3rem 0.1rem rgba(234, 70, 42, 0.50);
   /* Warning Colors */
   --warning-border-color: #ecb900;
-  --warning-background: linear-gradient(180deg, #f0bb1f, #ea9f00);
+  --warning-background: linear-gradient(180deg, #f3bb17, #e39a00);
   --warning-text: #ffffff;
   --warning-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   --warning-border-color-hover: #fcc41a;
   --warning-background-hover: linear-gradient(180deg, #f5c025, #eba91b);
   --warning-text-hover: #ffffff;
   --warning-border-color-active: #e8ac00;
-  --warning-background-active: linear-gradient(180deg, #dbaa1b, #d59202);
+  --warning-background-active: linear-gradient(180deg, #d6a412, #cc8b00);
   --warning-text-active: #fff;
   --warning-border-color-disabled: #c8aa71;
   --warning-background-disabled: #a28f6e;
@@ -153,22 +153,22 @@ html {
   --light-text: #ffffff;
   --light-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
   --light-border-color-hover: #c9f8ff;
-  --light-background-hover: linear-gradient(180deg, #e0f0ff, #d1f1f8);
+  --light-background-hover: linear-gradient(180deg, #b5d3ef, #94cedb);
   --light-text-hover: #005974;
   --light-border-color-active: #b5e8ef;
-  --light-background-active: linear-gradient(180deg, #b4d0e9, #a2ced7);
-  --light-text-active: #002a37;
+  --light-background-active: linear-gradient(180deg, #97bbdc, #6eb2c0);
+  --light-text-active: #001c24;
   --light-border-color-disabled: #dedede;
   --light-background-disabled: #c7c7c7;
   --light-text-disabled: #151515;
   --light-focus-ring: 0 0 0.3rem 0.1rem rgba(146, 197, 212, 0.50);
   /* Info Colors */
-  --info-border-color: #ae3fec;
-  --info-background: linear-gradient(180deg, #932e9c, #6721af);
+  --info-border-color: #b849f7;
+  --info-background: linear-gradient(180deg, #9e32b5, #6e1fc1);
   --info-text: #ffffff;
   --info-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   --info-border-color-hover: #b938e8;
-  --info-background-hover: linear-gradient(180deg, #a126ac, #6b2caa);
+  --info-background-hover: linear-gradient(180deg, #c535d2, #8132ce);
   --info-text-hover: #ffffff;
   --info-border-color-active: #7c2ca9;
   --info-background-active: linear-gradient(180deg, #7f2886, #491a7a);
@@ -202,26 +202,26 @@ html {
   --tab-hover-bg: linear-gradient(180deg, #0e1b2b, #021418);
   --tab-hover-text: #c5dee8;
   /* Alerts */
-  --alert-primary-border: #6697ae;
-  --alert-primary-background: linear-gradient(180deg, #4d6378, #435b5f);
-  --alert-primary-text: #d3eaf5;
+  --alert-primary-border: #6ba0b9;
+  --alert-primary-background: linear-gradient(180deg, #47749e, #1c6470);
+  --alert-primary-text: #dff3fc;
   --alert-secondary-border: #656565;
   --alert-secondary-background: linear-gradient(180deg, #4f4f4f, #373737);
   --alert-secondary-text: #fafafa;
   --alert-success-border: #91b838;
   --alert-success-background: linear-gradient(180deg, #849b1c, #4d861d);
   --alert-success-text: #f3f9e9;
-  --alert-danger-border: #df562f;
-  --alert-danger-background: linear-gradient(180deg, #c54716, #a01d0e);
+  --alert-danger-border: #ea613a;
+  --alert-danger-background: linear-gradient(180deg, #b95d38, #b43526);
   --alert-danger-text: #ffffff;
   --alert-warning-border: #fbbf2b;
-  --alert-warning-background: linear-gradient(180deg, #eca904, #d38c00);
-  --alert-warning-text: #fffdf6;
+  --alert-warning-background: linear-gradient(180deg, #cfa737, #c48224);
+  --alert-warning-text: #fffef9;
   --alert-info-border: #9475c2;
   --alert-info-background: linear-gradient(180deg, #6557c3, #673a8f);
   --alert-info-text: #f5ecff;
-  --alert-light-border: #c9c9c9;
-  --alert-light-background: linear-gradient(180deg, #aaaaaa, #7a7a7a);
+  --alert-light-border: #e4e4e4;
+  --alert-light-background: linear-gradient(180deg, #b9b9b9, #a3a3a3);
   --alert-light-text: #0e0e0e;
   --alert-dark-border: #656565;
   --alert-dark-background: linear-gradient(180deg, #4f4f4f, #373737);
@@ -310,7 +310,7 @@ a, .btn-link {
   outline: none;
 }
 
-  a:hover, .btn-link {
+  a:hover, .btn-link:hover {
     color: var(--link-hover);
   }
 
@@ -843,3 +843,12 @@ h6 {
     .button-row button:last-child {
       margin-right: 0;
     }
+
+
+.framed-image {
+  border-radius: var(--border-radius);
+  border: 4px solid white;
+  box-shadow: var(--element-shadow);
+  max-height: 300px;
+  max-width: 100%;
+}
