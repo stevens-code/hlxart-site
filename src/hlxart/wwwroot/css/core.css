@@ -81,12 +81,12 @@ html {
   --primary-background-hover: linear-gradient(180deg, #5999df, #009dbb);
   --primary-text-hover: #fff;
   --primary-border-color-active: #0085a9;
-  --primary-background-active: linear-gradient(180deg, #2268b4, #007188);
+  --primary-background-active: linear-gradient(180deg, #2268b4, #005e71);
   --primary-text-active: #fff;
   --primary-border-color-disabled: #547897;
   --primary-background-disabled: #4b6b86;
   --primary-text-disabled: #eaf2f6;
-  --primary-focus-ring: 0 0 0.3rem 0.1rem rgba(18, 140, 182, 0.50);
+  --primary-focus-ring: 0 0 0.3rem 0.1rem rgba(28, 160, 202, 0.50);
   /* Secondary Colors */
   --secondary-border-color: #525252;
   --secondary-background: linear-gradient(180deg, #3a3a3a, #282828);
@@ -141,16 +141,16 @@ html {
   --warning-background-hover: linear-gradient(180deg, #f5c025, #eba91b);
   --warning-text-hover: #ffffff;
   --warning-border-color-active: #e8ac00;
-  --warning-background-active: linear-gradient(180deg, #d6a412, #cc8b00);
+  --warning-background-active: linear-gradient(180deg, #d6a412, #c28400);
   --warning-text-active: #fff;
   --warning-border-color-disabled: #c8aa71;
   --warning-background-disabled: #a28f6e;
   --warning-text-disabled: #f6f2ea;
   --warning-focus-ring: 0 0 0.3rem 0.1rem rgba(234, 178, 42, 0.50);
   /* Light Colors */
-  --light-border-color: #a0a0a0;
-  --light-background: linear-gradient(180deg, #888888, #717171);
-  --light-text: #ffffff;
+  --light-border-color: #e1e1e1;
+  --light-background: linear-gradient(180deg, #d4d4d4, #b3b3b3);
+  --light-text: #161616;
   --light-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
   --light-border-color-hover: #c9f8ff;
   --light-background-hover: linear-gradient(180deg, #b5d3ef, #94cedb);
@@ -170,8 +170,8 @@ html {
   --info-border-color-hover: #b938e8;
   --info-background-hover: linear-gradient(180deg, #c535d2, #8132ce);
   --info-text-hover: #ffffff;
-  --info-border-color-active: #7c2ca9;
-  --info-background-active: linear-gradient(180deg, #7f2886, #491a7a);
+  --info-border-color-active: #8f32c4;
+  --info-background-active: linear-gradient(180deg, #7f2886, #531e8b);
   --info-text-active: #fff;
   --info-border-color-disabled: #ad87bb;
   --info-background-disabled: #936ea2;
@@ -221,7 +221,7 @@ html {
   --alert-info-background: linear-gradient(180deg, #6557c3, #673a8f);
   --alert-info-text: #f5ecff;
   --alert-light-border: #e4e4e4;
-  --alert-light-background: linear-gradient(180deg, #b9b9b9, #a3a3a3);
+  --alert-light-background: linear-gradient(180deg, #c5c5c5, #a3a3a3);
   --alert-light-text: #0e0e0e;
   --alert-dark-border: #656565;
   --alert-dark-background: linear-gradient(180deg, #4f4f4f, #373737);
