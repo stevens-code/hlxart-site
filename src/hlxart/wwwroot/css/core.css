@@ -86,7 +86,7 @@ html {
   --primary-border-color-disabled: #547897;
   --primary-background-disabled: #4b6b86;
   --primary-text-disabled: #eaf2f6;
-  --primary-focus-ring: 0 0 0.3rem 0.1rem rgba(28, 160, 202, 0.50);
+  --primary-focus-ring: 0 0 0.3rem 0.1rem rgb(71 210 255 / 50%);
   /* Secondary Colors */
   --secondary-border-color: #525252;
   --secondary-background: linear-gradient(180deg, #3a3a3a, #282828);
@@ -116,22 +116,22 @@ html {
   --success-border-color-disabled: #a4bd6d;
   --success-background-disabled: #93a26e;
   --success-text-disabled: #f2f6ea;
-  --success-focus-ring: 0 0 0.3rem 0.1rem rgba(113, 182, 18, 0.50);
+  --success-focus-ring: 0 0 0.3rem 0.1rem rgb(151 223 51 / 50%);
   /* Danger Colors */
   --danger-border-color: #ff7231;
   --danger-background: linear-gradient(180deg, #df5700, #e10000);
   --danger-text: #ffffff;
   --danger-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-  --danger-border-color-hover: #ea3f00;
+  --danger-border-color-hover: #ff662d;
   --danger-background-hover: linear-gradient(180deg, #eb6200, #da1000);
   --danger-text-hover: #ffffff;
-  --danger-border-color-active: #bd2500;
-  --danger-background-active: linear-gradient(180deg, #b25c00, #ac0c00);
+  --danger-border-color-active: #e56130;
+  --danger-background-active: linear-gradient(180deg, #c26400, #b40d00);
   --danger-text-active: #fff;
   --danger-border-color-disabled: #d59586;
   --danger-background-disabled: #a2796e;
   --danger-text-disabled: #f6ecea;
-  --danger-focus-ring: 0 0 0.3rem 0.1rem rgba(234, 70, 42, 0.50);
+  --danger-focus-ring: 0 0 0.3rem 0.1rem rgb(255 111 49 / 50%);
   /* Warning Colors */
   --warning-border-color: #ecb900;
   --warning-background: linear-gradient(180deg, #f3bb17, #e39a00);
@@ -146,7 +146,7 @@ html {
   --warning-border-color-disabled: #c8aa71;
   --warning-background-disabled: #a28f6e;
   --warning-text-disabled: #f6f2ea;
-  --warning-focus-ring: 0 0 0.3rem 0.1rem rgba(234, 178, 42, 0.50);
+  --warning-focus-ring: 0 0 0.3rem 0.1rem rgb(255 213 112 / 50%);
   /* Light Colors */
   --light-border-color: #e1e1e1;
   --light-background: linear-gradient(180deg, #d4d4d4, #b3b3b3);
@@ -167,7 +167,7 @@ html {
   --info-background: linear-gradient(180deg, #9e32b5, #6e1fc1);
   --info-text: #ffffff;
   --info-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-  --info-border-color-hover: #b938e8;
+  --info-border-color-hover: #cf4efe;
   --info-background-hover: linear-gradient(180deg, #c535d2, #8132ce);
   --info-text-hover: #ffffff;
   --info-border-color-active: #8f32c4;
@@ -176,7 +176,7 @@ html {
   --info-border-color-disabled: #ad87bb;
   --info-background-disabled: #936ea2;
   --info-text-disabled: #f4edf7;
-  --info-focus-ring: 0 0 0.3rem 0.1rem rgba(172, 42, 234, 0.50);
+  --info-focus-ring: 0 0 0.3rem 0.1rem rgb(202 92 255 / 50%);
   /* Dark Colors */
   --dark-border-color: #525252;
   --dark-background: linear-gradient(180deg, #3a3a3a, #282828);
