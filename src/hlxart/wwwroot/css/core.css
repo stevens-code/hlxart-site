@@ -39,6 +39,7 @@ html {
   /* Links */
   --link: hsl(185 85% 46%);
   --link-hover: hsl(185 83% 63%);
+  --link-active: hsl(185 85% 30%);
   /* Posts */
   --post-border: hsl(0 0% 26%);
   --post-bg: hsl(0 0% 8%);
@@ -312,6 +313,11 @@ a, .btn-link {
 
   a:hover, .btn-link:hover {
     color: var(--link-hover);
+  }
+
+  /* the last part of this is to override some stupid Bootstrap thing */
+  a:active, .btn-link:active, :not(.btn-check) + .btn-link:active {
+    color: var(--link-active);
   }
 
 /* Headers */
