@@ -116,8 +116,39 @@
   <img src="~/img/test.jpg" class="framed-image" />
 </div>
 
+<div>
+  <h2>Checkboxes</h2>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+    <label class="form-check-label" for="flexCheckDisabled">
+      Disabled checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexCheckCheckedDisabled">
+      Disabled checked checkbox
+    </label>
+  </div>
+</div>
+
 <script>
-  // Fake a task progressing on all the progress bars (go to 100% then 
+  // Fake a task progressing on all the progress bars (go to 100% then
   // jump back to 0% forever)
   let progress = 0;
   setInterval(() => {
