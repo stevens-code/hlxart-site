@@ -268,7 +268,8 @@ html {
   --file-button-border: #2e2e2e;
   --file-button-text: #ffffff;
   --file-button-bg: linear-gradient(180deg, #2f2f2f, #191919);
-  --checkbox-check: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23cff7f7' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  --checkbox-check: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  --radio-check: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 
 ::selection {
@@ -673,83 +674,164 @@ h6 {
     }
 
 /* Checkboxes */
-.form-check-input {
+.form-check-input[type=checkbox] {
   border-color: var(--secondary-border-color);
   background: var(--secondary-background);
   color: var(--secondary-text);
   text-shadow: var(--secondary-text-shadow);
 }
 
-  .form-check-input:hover,
-  .form-check-input:focus,
-  .form-check-input.focus {
+  .form-check-input[type=checkbox]:hover,
+  .form-check-input[type=checkbox]:focus,
+  .form-check-input[type=checkbox].focus {
     border-color: var(--secondary-border-color-hover);
     background: var(--secondary-background-hover);
     color: var(--secondary-text-hover);
   }
 
-  .form-check-input:focus,
-  form-check-input.focus {
+  .form-check-input[type=checkbox]:focus,
+  form-check-input[type=checkbox].focus {
     box-shadow: var(--secondary-focus-ring);
   }
 
-  .form-check-input.disabled,
-  .form-check-input:disabled {
+  .form-check-input[type=checkbox].disabled,
+  .form-check-input[type=checkbox]:disabled {
     text-shadow: none;
     color: var(--secondary-text-disabled);
     background: var(--secondary-background-disabled);
     border-color: var(--secondary-border-color-disabled);
   }
 
-  .form-check-input:not(:disabled):not(.disabled):active,
-  .form-check-input:not(:disabled):not(.disabled).active {
+  .form-check-input[type=checkbox]:not(:disabled):not(.disabled):active,
+  .form-check-input[type=checkbox]:not(:disabled):not(.disabled).active {
     border-color: var(--secondary-border-color-active);
     background: var(--secondary-background-active);
     color: var(--secondary-text-active);
   }
 
-    .form-check-input:not(:disabled):not(.disabled):active:focus,
-    .form-check-input:not(:disabled):not(.disabled).active:focus {
+    .form-check-input[type=checkbox]:not(:disabled):not(.disabled):active:focus,
+    .form-check-input[type=checkbox]:not(:disabled):not(.disabled).active:focus {
       box-shadow: var(--secondary-focus-ring);
     }
 
-  .form-check-input:checked {
+  .form-check-input[type=checkbox]:checked {
     border-color: var(--primary-border-color);
     background: var(--checkbox-check), var(--primary-background);
     color: var(--primary-text);
     text-shadow: var(--primary-text-shadow);
   }
 
-    .form-check-input:checked:hover,
-    .form-check-input:checked:focus,
-    .form-check-input:checked.focus {
+    .form-check-input[type=checkbox]:checked:hover,
+    .form-check-input[type=checkbox]:checked:focus,
+    .form-check-input[type=checkbox]:checked.focus {
       border-color: var(--primary-border-color-hover);
       background: var(--checkbox-check), var(--primary-background-hover);
       color: var(--primary-text-hover);
     }
 
-    .form-check-input:checked:focus,
-    form-check-input:checked.focus {
+    .form-check-input[type=checkbox]:checked:focus,
+    form-check-input[type=checkbox]:checked.focus {
       box-shadow: var(--primary-focus-ring);
     }
 
-    .form-check-input:checked.disabled,
-    .form-check-input:checked:disabled {
+    .form-check-input[type=checkbox]:checked.disabled,
+    .form-check-input[type=checkbox]:checked:disabled {
       text-shadow: none;
       color: var(--primary-text-disabled);
       background: var(--checkbox-check), var(--primary-background-disabled);
       border-color: var(--primary-border-color-disabled);
     }
 
-    .form-check-input:checked:not(:disabled):not(.disabled):active,
-    .form-check-input:checked:not(:disabled):not(.disabled).active {
+    .form-check-input[type=checkbox]:checked:not(:disabled):not(.disabled):active,
+    .form-check-input[type=checkbox]:checked:not(:disabled):not(.disabled).active {
       border-color: var(--primary-border-color-active);
       background: var(--checkbox-check), var(--primary-background-active);
       color: var(--primary-text-active);
     }
 
-      .form-check-input:checked:not(:disabled):not(.disabled):active:focus,
-      .form-check-input:checked:not(:disabled):not(.disabled).active:focus {
+      .form-check-input[type=checkbox]:checked:not(:disabled):not(.disabled):active:focus,
+      .form-check-input[type=checkbox]:checked:not(:disabled):not(.disabled).active:focus {
+        box-shadow: var(--primary-focus-ring);
+      }
+
+/* Radios */
+.form-check-input[type=radio] {
+  border-color: var(--secondary-border-color);
+  background: var(--secondary-background);
+  color: var(--secondary-text);
+  text-shadow: var(--secondary-text-shadow);
+}
+
+  .form-check-input[type=radio]:hover,
+  .form-check-input[type=radio]:focus,
+  .form-check-input[type=radio].focus {
+    border-color: var(--secondary-border-color-hover);
+    background: var(--secondary-background-hover);
+    color: var(--secondary-text-hover);
+  }
+
+  .form-check-input[type=radio]:focus,
+  form-check-input[type=radio].focus {
+    box-shadow: var(--secondary-focus-ring);
+  }
+
+  .form-check-input[type=radio].disabled,
+  .form-check-input[type=radio]:disabled {
+    text-shadow: none;
+    color: var(--secondary-text-disabled);
+    background: var(--secondary-background-disabled);
+    border-color: var(--secondary-border-color-disabled);
+  }
+
+  .form-check-input[type=radio]:not(:disabled):not(.disabled):active,
+  .form-check-input[type=radio]:not(:disabled):not(.disabled).active {
+    border-color: var(--secondary-border-color-active);
+    background: var(--secondary-background-active);
+    color: var(--secondary-text-active);
+  }
+
+    .form-check-input[type=radio]:not(:disabled):not(.disabled):active:focus,
+    .form-check-input[type=radio]:not(:disabled):not(.disabled).active:focus {
+      box-shadow: var(--secondary-focus-ring);
+    }
+
+  .form-check-input[type=radio]:checked {
+    border-color: var(--primary-border-color);
+    background: var(--radio-check), var(--primary-background);
+    color: var(--primary-text);
+    text-shadow: var(--primary-text-shadow);
+  }
+
+    .form-check-input[type=radio]:checked:hover,
+    .form-check-input[type=radio]:checked:focus,
+    .form-check-input[type=radio]:checked.focus {
+      border-color: var(--primary-border-color-hover);
+      background: var(--radio-check), var(--primary-background-hover);
+      color: var(--primary-text-hover);
+    }
+
+    .form-check-input[type=radio]:checked:focus,
+    form-check-input[type=radio]:checked.focus {
+      box-shadow: var(--primary-focus-ring);
+    }
+
+    .form-check-input[type=radio]:checked.disabled,
+    .form-check-input[type=radio]:checked:disabled {
+      text-shadow: none;
+      color: var(--primary-text-disabled);
+      background: var(--radio-check), var(--primary-background-disabled);
+      border-color: var(--primary-border-color-disabled);
+    }
+
+    .form-check-input[type=radio]:checked:not(:disabled):not(.disabled):active,
+    .form-check-input[type=radio]:checked:not(:disabled):not(.disabled).active {
+      border-color: var(--primary-border-color-active);
+      background: var(--radio-check), var(--primary-background-active);
+      color: var(--primary-text-active);
+    }
+
+      .form-check-input[type=radio]:checked:not(:disabled):not(.disabled):active:focus,
+      .form-check-input[type=radio]:checked:not(:disabled):not(.disabled).active:focus {
         box-shadow: var(--primary-focus-ring);
       }
 
